@@ -8,36 +8,16 @@ A Variational Autoencoder (VAE) is a type of generative model introduced by King
 
 VAEs have a structure similar to traditional Autoencoders but with key differences:
 
-- Encoder: Maps input data to a probability distribution in the latent space. The encoder outputs the mean (
-𝜇
-μ) and standard deviation (
-𝜎
-σ) of the latent variables 
-𝑧
-z.
-- Latent Space: Latent variables 
-𝑧
-z are sampled from a normal distribution.
-- Decoder: Reconstructs the original input data from the latent variables 
-𝑧
-z. The decoder takes 
-𝑧
-z as input and outputs the distribution of the original data 
-𝑥
-x.
+- Encoder: Maps input data to a probability distribution in the latent space. The encoder outputs the mean (𝜇) and standard deviation (𝜎) of the latent variables 𝑧.
+- Latent Space: Latent variables 𝑧 are sampled from a normal distribution.
+- Decoder: Reconstructs the original input data from the latent variables 𝑧. The decoder takes 𝑧 as input and outputs the distribution of the original data 𝑥.
 
 ### 3. Loss Function of VAE
 
 The loss function of a VAE consists of two parts:
 
 Reconstruction Loss: Measures how well the input data is reconstructed. This is typically computed using Mean Squared Error (MSE) or Binary Cross-Entropy.
-- KL Divergence Loss: Measures how closely the distribution of the latent variables 
-𝑧
+- KL Divergence Loss: Measures how closely the distribution of the latent variables 𝑧
 z matches a normal distribution.
 The total loss function is expressed as:
-𝐿
-=
-- Reconstruction Loss
-+
-KL Divergence Loss
-L=Reconstruction Loss+KL Divergence Loss
+𝐿 = Reconstruction Loss + KL Divergence Loss
