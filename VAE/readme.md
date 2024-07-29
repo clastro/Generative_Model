@@ -16,8 +16,6 @@ VAEs have a structure similar to traditional Autoencoders but with key differenc
 
 The loss function of a VAE consists of two parts:
 
-Reconstruction Loss: Measures how well the input data is reconstructed. This is typically computed using Mean Squared Error (MSE) or Binary Cross-Entropy.
-- KL Divergence Loss: Measures how closely the distribution of the latent variables 𝑧
-z matches a normal distribution.
-The total loss function is expressed as:
-𝐿 = Reconstruction Loss + KL Divergence Loss
+- Reconstruction Loss: Measures how well the input data is reconstructed. This is typically computed using Mean Squared Error (MSE) or Binary Cross-Entropy.
+- KL Divergence Loss: Measures how closely the distribution of the latent variables 𝑧 matches a normal distribution.
+The total loss function is expressed as: 𝐿 = Reconstruction Loss + KL Divergence Loss
